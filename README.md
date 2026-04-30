@@ -19,27 +19,29 @@
 | ChromeDriver | Драйвер браузера Chrome |
 
 ---
+## 📁 Структура проєкту
 
-## Структура проєкту
+```
 Laboratory work: Green City/
 ├── src/
 │   ├── components/
 │   │   ├── init.py
-│   │   ├── base_component.py   # Базовий клас для всіх компонентів
-│   │   ├── event_card.py       # Компонент картки події
-│   │   ├── filter_panel.py     # Компонент панелі фільтрів
-│   │   └── header.py           # Компонент шапки сайту
+│   │   ├── base_component.py   
+│   │   ├── event_card.py     
+│   │   ├── filter_panel.py  
+│   │   └── header.py           
 │   ├── pages/
 │   │   ├── init.py
-│   │   ├── base_page.py        # Базовий клас для всіх сторінок
-│   │   └── events_page.py      # Page Object сторінки подій
+│   │   ├── base_page.py       
+│   │   └── events_page.py      
 ├── tests/
-│   └── test_events_page.py     # Тест-кейси
-├── allure-results/             # Згенеровані дані Allure
-├── conftest.py                 # Pytest фікстури (запуск/зупинка драйвера)
-├── pytest.ini                  # Конфігурація Pytest + Allure
-├── requirements.txt            # Залежності Python
+│   └── test_events_page.py    
+├── allure-results/            
+├── conftest.py                
+├── pytest.ini                 
+├── requirements.txt            
 └── README.md
+```
 ---
 ### Компонентний підхід
 Повторювані елементи винесені в окремі класи компонентів, які наслідують BaseComponent:
